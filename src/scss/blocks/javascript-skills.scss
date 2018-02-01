@@ -1,0 +1,64 @@
+.javascript-skills {
+	border-bottom: 2px solid $color-gallery;
+	padding: 58px 20px 60px;
+	background-image: url("../images/bg-page.jpg");
+	background-color: $color-bianca;
+
+	&__text {
+		margin-bottom: 20px;
+		padding: 5px 0 0 10px;
+
+		@media (min-width: 640px) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		margin: 0 auto 15px;
+		width: 220px;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		color: $text-black;
+
+		@media (min-width: 640px) {
+			margin: 0;
+			margin-bottom: 15px;
+			text-align: left;
+		}
+	}
+
+	&__count {
+		display: block;
+		font-weight: 900;
+		font-size: 50px;
+		line-height: 50px;
+		text-align: center;
+		color: $text-blue;
+
+		@media (min-width: 640px) {
+			text-align: left;
+		}
+	}
+
+	&__progressbar {
+		position: relative;
+		margin: 0 auto;
+		width: 254px;
+
+		@media (min-width: 640px) {
+			margin: 0;
+		}
+	}
+
+	&__arrow {
+		position: absolute;
+		left: 74px;
+		bottom: 0;
+		display: block;
+		width: 64px;
+		height: 19px;
+		transform-origin: 85% 50%;
+	}
+}

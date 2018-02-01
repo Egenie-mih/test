@@ -1,0 +1,39 @@
+extends pug/base
+
+append vars
+	-
+		html.classList.push('page-index')
+		title = 'Тестовое задание'
+		meta.viewport = 'width=device-width, initial-scale=1'
+
+include pug/mixins/blocks/personal-info
+include pug/mixins/blocks/skills
+include pug/mixins/blocks/javascript-skills
+
+block content
+	.page-index__wrapper
+		.page-index__card
+			+personal-info({
+				"name": "Михайлова Евгения",
+				"born": "26.04.1994",
+				"city": "г. Санкт-Петербург",
+				"mail": "astra2826@gmail.com"
+				}
+			)
+
+			+skills([
+				{"name": "HTML5", "checked": true},
+				{"name": "SASS", "checked": true},
+				{"name": "Vanillajs", "checked": true},
+				{"name": "git", "checked": true},
+				{"name": "CSS3", "checked": true},
+				{"name": "Less", "checked": true},
+				{"name": "Angular", "checked": false},
+				{"name": "Foundation", "checked": true},
+				{"name": "БЭМ", "checked": true},
+				{"name": "Gulp", "checked": true},
+				{"name": "jQuery", "checked": true},
+				{"name": "Bootstrap", "checked": true}
+			])
+
+			+javascript-skills()

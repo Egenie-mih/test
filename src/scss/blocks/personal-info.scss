@@ -1,0 +1,67 @@
+.personal-info {
+	position: relative;
+	border-bottom: 2px solid $color-gallery;
+	padding: 30px 20px;
+	background-image: url("../images/bg-page.jpg");
+	background-color: $color-bianca;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 4px;
+		bottom: 11px;
+		z-index: 2;
+		width: 138px;
+		height: 124px;
+		background-image: url("../images/approve.svg");
+		background-repeat: no-repeat;
+
+		@media (min-width: 450px) {
+			width: 184px;
+			height: 166px;
+		}
+	}
+
+	&__photo {
+		overflow: hidden;
+		margin: 0 auto;
+		border-radius: 50%;
+		width: 138px;
+		height: 138px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		@media (min-width: 640px) {
+			margin: 0;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		margin-top: 20px;
+		padding-left: 5px;
+
+		@media (min-width: 640px) {
+			margin: 0;
+		}
+	}
+
+	&__item {
+		list-style: none;
+		margin-bottom: 34px;
+		border-bottom: 2px solid $color-mine-shaft;
+		padding: 0;
+		padding-bottom: 6px;
+		font-size: 12px;
+		line-height: 14px;
+		text-transform: uppercase;
+		color: $text-dove-gray;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	font-family: $font-family-roboto;
+}

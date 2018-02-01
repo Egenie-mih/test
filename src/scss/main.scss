@@ -1,0 +1,14 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+
+@import "blocks/page-index";
+@import "blocks/personal-info";
+@import "blocks/skills";
+@import "blocks/javascript-skills";

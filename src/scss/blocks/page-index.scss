@@ -1,0 +1,11 @@
+.page-index {
+	&__wrapper {
+		padding: 60px 0 100px;
+		background-color: $color-gallery;
+	}
+
+	&__card {
+		margin: 0 auto;
+		max-width: 660px;
+	}
+}

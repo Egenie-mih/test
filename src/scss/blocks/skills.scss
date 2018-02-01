@@ -1,0 +1,74 @@
+.skills {
+	border-bottom: 2px solid $color-gallery;
+	padding: 30px 0 0 20px;
+	background-image: url("../images/bg-page.jpg");
+	background-color: $color-bianca;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	&__item {
+		margin-bottom: 35px;
+	}
+
+	&__input {
+		display: none;
+
+		+ label {
+			margin-left: 0;
+		}
+
+		&:checked + label {
+			margin-left: 0;
+
+			&::before {
+				background-color: $color-blue;
+			}
+
+			&::after {
+				display: block;
+			}
+		}
+	}
+
+	&__label {
+		position: relative;
+		padding-left: 27px;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $text-dove-gray;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -4px;
+			display: block;
+			border-radius: 5px;
+			width: 19px;
+			height: 19px;
+			background-color: $color-gallery;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 4px;
+			top: 2px;
+			display: none;
+			border-bottom: 2px solid $color-white;
+			border-left: 2px solid $color-white;
+			width: 12px;
+			height: 5px;
+			box-sizing: border-box;
+			transform: rotate(-45deg);
+		}
+	}
+}

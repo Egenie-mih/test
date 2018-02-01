@@ -1,0 +1,8 @@
+mixin personal-info(data)
+	section.personal-info.grid-x
+		.cell.small-4.small-offset-2.medium-2.medium-offset-0
+			.personal-info__photo
+				img(src="images/photo.jpg" alt="Личное фото")
+		ul.personal-info__list.cell.small-8.medium-6
+			each item in data
+				li.personal-info__item= item
